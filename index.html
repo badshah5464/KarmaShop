@@ -1,37 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./Icon.png" />
     <title>Karma-Online-Shopping</title>
-    <link rel="stylesheet" href="./Var.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./Header.css">
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="./logo.png" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pages</a></li>
-          <li><a href="#">Contact</a></li>
-          <!--? Shopping Bag -->
-          <li><a href="#"><i class="fas fa-bag-shopping"></i></a></li>
-          <!--? Search Icon -->
-          <li class="Search-icon"><i class="fas fa-magnifying-glass"></i></li>
-        </ul>
-      </nav>
+    <link rel="stylesheet" href="./Var.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./Header.css" />
+</head>
+
+<body style="height:300vh;">
+    <!--! Header -->
+    <header class="header-top" id="headerScroll">
+        <section class="header-container">
+            <section class="navigation">
+                <div class="logo">
+                    <img src="./logo.png" alt="logo" />
+                </div>
+                <nav class="navigation">
+                    <div class="single-a">
+                        <a href="#">Home</a>
+                    </div>
+                    <!-- ? navigation-ul -->
+                    <section class="navigation-drop-down">
+                        <div class="dropdown">
+                            <div class="drop" onclick="shop()">Shop</div>
+                            <div class="down" id="shop">
+                                <div>
+                                    <a href="#" class="animated-link">shop category</a>
+                                </div>
+                                <hr class="dropdown-a">
+                                <div>
+                                    <a href="#" class="animated-link">product details</a>
+                                </div>
+                                <hr class="dropdown-a">
+                                <div>
+                                    <a href="" class="animated-link">product checkout</a>
+                                </div>
+                                <hr class="dropdown-a">
+                                <div>
+                                    <a href="" class="animated-link">shopping cart</a>
+                                </div>
+                                <hr class="dropdown-a">
+                                <div>
+                                    <a href="" class="animated-link">conformation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="drop" onclick="blog()">Blog</div>
+                            <div class="down" id="blog">
+                                <div>
+                                    <a href="#" class="animated-link">Blog</a>
+                                </div>
+                                <hr class="dropdown-a">
+                                <div>
+                                    <a href="#" class="animated-link">Blog Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="drop" onclick="pages()">Pages</div>
+                            <div class="down" id="pages">
+                                <div>
+                                    <a href="#" class="animated-link">Login</a>
+                                </div>
+                                <hr class="dropdown-a">
+                                <div>
+                                    <a href="#" class="animated-link">Tracking</a>
+                                </div>
+                                <hr class="dropdown-a">
+                                <div>
+                                    <a href="#" class="animated-link">Elements</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="single-a">
+                        <a href="#">Contact</a>
+                    </div>
+                    <ul class="cart-search">
+                        <li>
+                            <a href="#"><i class="fas fa-bag-shopping"></i></a>
+                        </li>
+                        <!--? Search Icon -->
+                        <li class="search-icon" id="searchIcon">
+                            <i class="fas fa-magnifying-glass"></i>
+                        </li>
+                        <div class="search-penal" id="searchPenal">
+                            <div class="search-input">
+                                <input type="text" placeholder="Search" class="search-control" />
+                            </div>
+                            <!--? cancel btn  -->
+                            <div class="cancel-btn"><i class="fas fa-xmark"></i></div>
+                        </div>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+        <script src="./Header.js"></script>
     </header>
-    <script
-      src="https://kit.fontawesome.com/010f924f62.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!--! /////  -->
+
+    <main>
+        <!--! home -->
+        <!--? slider Container  -->
+        <section class="home slider-container">
+            <!--* container 01  -->
+            <section class="slideshow change">
+                <div class="side-container">
+                    <div class="home-title">
+                        <h1>Nike New <br> Collection!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt possimus
+                            perferendis minus ipsam numquam consectetur facere necessitatibus repellat reiciendis,
+                            nobis, nostrum maxime magnam obcaecati eligendi sed atque velit corporis!</p>
+                        <div class="add-to-bag">
+                            <span>+</span>
+                            <span>ADD TO BAG</span>
+                        </div>
+                    </div>
+
+                    <div class="shoes-img">
+                        <img src="./home-shoes.png" alt="Shoes">
+                    </div>
+                </div>
+            </section>
+            <!--* container 02  -->
+            <section class="slideshow change">
+                <div class="side-container">
+                    <div class="home-title">
+                        <h1>Nike New <br> Collection! 11</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto deserunt possimus
+                            perferendis minus ipsam numquam consectetur facere necessitatibus repellat reiciendis,
+                            nobis, nostrum maxime magnam obcaecati eligendi sed atque velit corporis!</p>
+                        <div class="add-to-bag">
+                            <span>+</span>
+                            <span>ADD TO BAG</span>
+                        </div>
+                    </div>
+
+                    <div class="shoes-img">
+                        <img src="./home-shoes.png" alt="Shoes">
+                    </div>
+                </div>
+            </section>
+            <!--? priv end next -->
+            <div class="next-prev">
+                <div class="priv" onclick="plushSlide(-1)">
+                    <p>PREV</p>
+                    <i class="fas fa-left-long"></i>
+                </div>
+                <div class="next" onclick="plushSlide(1)">
+                    <p>NEXT</p>
+                    <i class="fas fa-right-long"></i>
+                </div>
+            </div>
+            <!--? ////// -->
+        </section>
+        <!--? ///// Home Slider-Container -->
+
+        <section class="facility">
+            <div class="container">
+                <div><i class="fa-solid fa-truck"></i></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container">
+                <div><i class="fa-solid fa-rotate-left"></i></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container">
+                <div><i class="fa-solid fa-rotate-left"></i></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="container">
+                <div><i class="fa-solid fa-credit-card"></i></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+
+
+        <script src="./index.js"></script>
+    </main>
+
+    <!--! Ending Code -->
+    <script src="https://kit.fontawesome.com/010f924f62.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

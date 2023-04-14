@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: relative; */
+}
+
+hr.dropdown-a {
+    border: .5px solid gray;
+}
+
+:root {
+    /*! Font's  */
+    --heading-font-Loto: 'Lato', sans-serif;
+
+    /*! Color  */
+    --black: #1e1e1e;
+    --theme-text: #ff7700;
+
+    /*! BAckground color  */
+    --theme-bg: linear-gradient(90deg, #ff7700 0%, #ffee00 100%);
+    --theme-two-bg: linear-gradient(90deg, #ffee00 0%, #ff7700 100%);
+}
